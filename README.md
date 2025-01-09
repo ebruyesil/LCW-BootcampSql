@@ -1,5 +1,5 @@
 # LCW-BootcampSql
-## 1-test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
+### 1-test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
 
 ```sql
 CREATE TABLE employee (
@@ -10,7 +10,7 @@ CREATE TABLE employee (
 );
 ```
 
-## 2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
+### 2-Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.
 ```sql
 INSERT INTO employee (id, name, birthday, email) VALUES
 (1, 'Kelsey', '1954-08-13', 'kspaven0@google.fr'),
@@ -65,7 +65,7 @@ INSERT INTO employee (id, name, birthday, email) VALUES
 (50, 'Cull', '1951-05-19', 'csaxby1d@ibm.com');
 ```
 
-## 3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
+### 3-Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.
 ```sql
 -- id'ye göre güncelleme
 UPDATE employee
@@ -93,7 +93,7 @@ SET name = UPPER(name)
 WHERE birthday > '1970-01-01';
 ```
 
-## 4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
+### 4-Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.
 ```sql
 -- id ile silme
 DELETE FROM employee
